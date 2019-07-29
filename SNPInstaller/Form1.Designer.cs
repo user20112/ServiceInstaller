@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.InstallButton = new System.Windows.Forms.Button();
             this.UninstallButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // InstallButton
             // 
-            this.InstallButton.Location = new System.Drawing.Point(22, 2);
+            this.InstallButton.Location = new System.Drawing.Point(29, 2);
+            this.InstallButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InstallButton.Name = "InstallButton";
-            this.InstallButton.Size = new System.Drawing.Size(75, 23);
+            this.InstallButton.Size = new System.Drawing.Size(100, 28);
             this.InstallButton.TabIndex = 0;
             this.InstallButton.Text = "Instal";
             this.InstallButton.UseVisualStyleBackColor = true;
@@ -44,9 +46,10 @@
             // 
             // UninstallButton
             // 
-            this.UninstallButton.Location = new System.Drawing.Point(22, 31);
+            this.UninstallButton.Location = new System.Drawing.Point(29, 38);
+            this.UninstallButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UninstallButton.Name = "UninstallButton";
-            this.UninstallButton.Size = new System.Drawing.Size(75, 23);
+            this.UninstallButton.Size = new System.Drawing.Size(100, 28);
             this.UninstallButton.TabIndex = 1;
             this.UninstallButton.Text = "uninstall";
             this.UninstallButton.UseVisualStyleBackColor = true;
@@ -54,11 +57,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(120, 66);
+            this.ClientSize = new System.Drawing.Size(197, 81);
             this.Controls.Add(this.UninstallButton);
             this.Controls.Add(this.InstallButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
