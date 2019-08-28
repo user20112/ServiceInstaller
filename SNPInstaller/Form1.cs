@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SNPInstaller
@@ -29,7 +22,6 @@ namespace SNPInstaller
             if (!isElevated)
                 MessageBox.Show("Please Launch Me in Administrative mode! ( rightclick and hot run as admin i need this to install the service)");
         }
-
 
         private void InstallButton_Click(object sender, EventArgs e)
         {
